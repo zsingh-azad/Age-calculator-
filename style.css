@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #07111f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 620px;
+}
+
+.card {
+  background: #0d1b2e;
+  border: 1px solid #1c3552;
+  border-radius: 24px;
+  padding: 38px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.tag {
+  color: #62b6ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: clamp(32px, 7vw, 48px);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #9db0c6;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  color: #dce8f5;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #294664;
+  border-radius: 12px;
+  background: #081525;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #62b6ff;
+}
+
+button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  border: 0;
+  border-radius: 12px;
+  background: #318ce7;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #247bcf;
+}
+
+.error {
+  color: #ff7f7f;
+  min-height: 22px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.result {
+  margin-top: 18px;
+  padding-top: 24px;
+  border-top: 1px solid #1c3552;
+}
+
+.hidden {
+  display: none;
+}
+
+.age-main {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.age-main span {
+  display: block;
+  font-size: 58px;
+  font-weight: 800;
+  color: #62b6ff;
+}
+
+.age-main small {
+  color: #a9bbce;
+  font-size: 15px;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.time-box {
+  text-align: center;
+  padding: 14px 6px;
+  border-radius: 14px;
+  background: #081525;
+  border: 1px solid #1b344f;
+}
+
+.time-box strong {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.time-box span {
+  color: #8fa5bc;
+  font-size: 11px;
+}
+
+footer {
+  text-align: center;
+  color: #61758c;
+  font-size: 12px;
+  margin-top: 28px;
+}
+
+footer strong {
+  color: #9db0c6;
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 26px 20px;
+  }
+
+  .time-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .time-box:last-child {
+    grid-column: 1 / -1;
+  }
+}
